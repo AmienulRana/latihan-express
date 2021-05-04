@@ -1,0 +1,228 @@
+/* umum */
+section{
+  margin-top: 110px;
+}
+button.pesan{
+  background-color:#4eb883 !important;
+  color: white;
+}
+button.pesan:hover{
+  background-color:rgb(67,157,97) !important;
+}
+button.pesan span{
+  font-weight: 600;
+  letter-spacing: 1px;
+  transform: translateY(-5px);
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+  font-family: sans-serif;
+}
+.menu-button{
+  color: #4eb883;
+}
+.row-name-best-food{
+  overflow-x: hidden;
+
+}
+.col-name-best-food{
+  animation: animHr 2s ease-out;
+  animation-fill-mode: forwards;
+}
+.best-food hr{
+  color: #4eb883;
+  width: 15%;
+  border: 2px solid #4eb883;
+  opacity: 1;
+}
+a.link-allmenu{
+  color: #4eb883;
+  text-align: center;
+  display: none;
+}
+@keyframes animHr {
+  0%{
+    transform: translateX(-200px);
+  }
+  100%{
+    transform: translateX(none);
+  }
+}
+h4.nama-makanan{
+  font-family: 'Quicksand',sans-serif;
+  font-weight: 600;
+}
+.card{
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.card img{
+  object-fit: cover;
+  height: 200px;
+}
+.card button.pesan{
+  padding: 5px 22px !important;
+}
+.card button.pesan:hover{
+  color: white;
+}
+/* navbar */
+  nav.navbar{
+    background: white;
+  }
+  nav.navbar a.navbar-brand{
+    color:  #4eb883 !important;
+    font-family: 'Lobster', sans-serif;
+    font-size: 29px;
+  }
+  nav.navbar a.nav-link.active{
+    color:  #4eb883 !important;
+    font-weight: bold;
+  }
+  nav.navbar a.nav-link{
+    font-size: 19px;
+    color: rgb(190,190,190);
+    /* font-weight: 600; */
+  }
+  nav.navbar a.nav-link:hover{
+    color:  #4eb883 !important;
+  }
+
+  nav.navbar ion-icon{
+    width: 35px;
+    height: 35px;
+  }
+
+  /* section banner */
+  section.banner{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px !important;
+  }
+  section.banner h1 span{
+    font-weight: bold;
+  }
+  section.banner p {
+    font-size: 17px;
+  }
+
+
+/* section best food */
+  section.best-food h2 span{
+    font-weight: bold;
+  }
+/* garis */
+  section.garis{
+    margin:150px auto;
+  }
+  section.garis hr{
+    border: 1px solid #4eb883;
+    opacity: 1;
+  }
+  footer{
+    /* margin-top: 230px; */
+  }
+  footer h2{
+    color: #4eb883;
+  }
+  footer p a{
+    color: #BEBEBE;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  footer p{
+    line-height: 13px !important;
+  }
+  /* Responsive breakpoint */
+  @media (max-width: 575.98px) {
+    h1{
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    a.link-allmenu{
+      display:block;
+    }
+    /* navbar */
+    a.navbar-brand{
+      font-size: 24px !important;
+    }
+    /* banner */
+    .col-ilustrasi{
+      display: none;
+    }
+    section.banner p,footer p a{
+      font-size: 16px;
+    }
+    section.banner button.pesan span{
+      font-weight: normal !important;
+      letter-spacing: normal !important;
+    }
+    .col-name-best-food hr{
+      width: 160px;
+    }
+    .col-best-food{
+      margin: auto;
+    }
+    footer .col-12{
+      margin-top: 15px;
+    }
+    footer h2{
+      font-size: 23px;
+    }
+
+  }
+
+
+  @media  (min-width: 575.98px) and (max-width: 767.98px) {
+    .col-ilustrasi{
+      display: none;
+    }
+    a.navbar-brand{
+      font-size: 26px !important;
+    }
+    /* banner */
+    h1{
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    .col-ilustrasi{
+      display: none;
+    }
+    section.banner p,footer p a{
+      font-size: 16px;
+    }
+    section.banner button.pesan span{
+      font-weight: normal !important;
+      letter-spacing: normal !important;
+    }
+    /* best food */
+    .col-name-best-food hr{
+      width: 175px;
+    }
+    a.link-allmenu{
+      display:block;
+    }
+    footer h2{
+      font-size: 23px;
+    }
+
+
+  }
+
+
+  @media  (min-width: 767.98px) and (max-width: 992px) {
+    a.link-allmenu{
+      display:block;
+    }
+
+  }
+
+
+  @media  (min-width: 992px){
+     ion-icon.menu-button{
+       display: none !important;
+     }
+  }
+
+
+  @media (max-width: 1399.98px) {  }

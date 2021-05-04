@@ -1,0 +1,61 @@
+<%- include('layouts/header') %>
+<%- include('layouts/nav') %>
+
+
+  <section class="container container-fluid banner">
+    <div class="row justify-content-between">
+      <div class="col-lg-6 col-md-6 col-12 align-self-center">
+        <h1> <span> Delicious Food Menu, </span> <br> in Your Gadget</h1>
+        <p>Ayo Segera Pilih Dan pesan makanan favorit anda</p>
+        <button class="btn pesan"> <span>Pesan Sekarang</span></button>
+      </div>
+        <div class="col-lg-5 col-md-6 col-12 col-ilustrasi">
+            <img src="assets/ilustrasi.png" alt="" class="img-fluid">
+        </div>
+    </div>
+  </section>
+
+  <section class="best-food container container-fluid">
+     <div class="row row-name-best-food">
+       <div class="col-12 col-name-best-food">
+         <h2>Best <span>Foods</span></h2>
+         <hr>
+       </div>
+     </div>
+     <div class="row my-5 justify-content-between">
+       <% makanan.forEach((m, i) => { %>
+         <% if(m.kategori === 'best food') { %>
+           <div class="col-lg-3 col-md-4 col-9 col-sm-5 mb-5 col-best-food">
+             <div class="card">
+              <img src="assets/<%- m.gambar %>" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h4 class="card-text nama-makanan"><%- m.nama %></h4>
+                <p class="harga card-subtitle text-muted"><%- m.harga %></p>
+                <button class="btn pesan mt-3">tambah</button>
+              </div>
+            </div>
+           </div>
+         <% } %>
+
+         <% if(i + 1 >  4) { %>
+           <% return false %>
+         <% } %>
+       <% }); %>
+     </div>
+  </section>
+
+  <a href="allMenu" class="link-allmenu">Lihat semua menu</a>
+
+
+  <section class="garis container cotainer-fluid">
+    <div class="row justify-content-between">
+      <div class="col-4">
+        <hr>
+      </div>
+      <div class="col-4">
+        <hr>
+      </div>
+    </div>
+  </section>
+
+<%- include('layouts/footer') %>
